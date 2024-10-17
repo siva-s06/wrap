@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labels</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .label-text{
+            font-size: 18px;
+            /* border: 2px solid; */
+        }
+
+        #previewImage {
+            transition: transform 0.5s ease;
+        }
+            #previewImage {
+                transition: transform 0.5s ease;
+            }
+            #container{
+                position: relative;
+            }
+            #image-container{
+                width: 900px;
+                height: 150px;
+                position: absolute;
+            }
+            #imageDisplay{
+                width: 100px;
+                height: 150px;
+                top: 20px;
+                left: -570px;
+            }
+            #sd{
+                position: absolute;
+                width: 50px;
+                height: 20px;
+                top: 145px;
+                left: 340px;
+            }
+            #sc{
+                position: absolute;
+                width: 50px;
+                height: 20px;
+                top: 145px;
+                left: 570px;
+            }
+            #sb{
+                position: absolute;
+                width: 200px;
+                height: 20px;
+                top: 200px;
+                left: 380px;
+            }
+            #sl{
+                position: absolute;
+                width: 200px;
+                height: 20px;
+                top: 255px;
+                left: 380px;
+            }
+            #nm{
+                position: absolute;
+                width: 200px;
+                height: 30px;
+                top: 90px;
+                left: 240px;
+
+            }
+        </style>
+    
+</head>
+<body>
+   <main>
+    <div id="container">
+        <img src="C:\Users\kumar\OneDrive\Pictures\nameslip.png" alt="choose file" id="labelimg">
+        <div id="img-container">
+            <img id="imageDisplay" src="" alt="Uploaded Image">
+        </div>
+        <div id="nm" class="label-text"></div>
+        <div id="sd" class="label-text"></div>
+        <div id="sc" class="label-text"></div>
+        <div id="sb" class="label-text"></div>
+        <div id="sl" class="label-text"></div>
+    </div>
+    <div class="upload">
+        <input type="file" id="previewImage" accept="image/*" class="custom-file-input">
+    </div>
+        <div class="function-grid">
+            <button id="rotateLeft" class="function-button">Rotate Right</button>
+            <button id="rotateRight" class="function-button">Rotate Left</button>
+            <button id="zoomIn" class="function-button">Zoom In</button>
+            <button id="zoomOut" class="function-button">Zoom Out</button>
+            <button id="flipHorizontal" class="function-button">Flip Horizontal</button>
+            <button id="flipVertical" class="function-button">Flip flipVertical</button>
+            <button id="moveUp" class="function-button">Move Up</button>
+            <button id="moveDown" class="function-button">Move Down</button>
+            <button id="moveLeft" class="function-button">Move Left</button>
+            <button id="moveRight" class="function-button">Move Right</button>
+            <button type="submit" id="bg" class="submit-button">Remove Background</button>
+        </div>
+   </main>
+        
+    <div class="input-container">
+        <input type="text" id="name" onchange="convert()" placeholder="Name" class="input-box">
+        <input type="text" id="std" onchange="convert()" placeholder="Standard" class="input-box">
+        <input type="text" id="sec" onchange="convert()" placeholder="Section" class="input-box">
+        <input type="text" id="sub" onchange="convert()" placeholder="Subject" class="input-box">
+        <input type="text" id="scl" onchange="convert()" placeholder="School" class="input-box">
+    </div>
+    <button type="submit" id="download" class="submit-button">Download Your Label</button>
+
+    <img id="resultImage" style="display:none;" />
+     
+
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+</html>
