@@ -1,0 +1,128 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+#container,.input,.input_values{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#container{
+    width: 720px;
+    height: 400px;
+    padding-left: 100px;
+   
+}
+
+#imageDisplay{
+    flex-direction: column;
+    width: 130px; 
+    height: 250px; 
+    position: relative;
+    right: 500%;
+}
+
+.function-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    width: 100%;
+    
+}
+
+.function-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.function-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+.input-container {
+    display: flex;
+    
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.input-box {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    font-size: 17px;
+}
+
+.input-box:hover {
+    border-color: #007bff;
+}
+.value{
+     flex-direction: column;
+     margin-top: 5%;
+     margin-right: 45%;
+    
+}
+
+.input_values
+{
+    margin-top: -4.5cm;
+    margin-right: 20px;
+}
+/* image moving*/
+  #image {
+    max-width: 100%;
+  }
+
+  #imageHidden {
+    display: none;
+  }
+
+  /* background removing*/
+  .submit-button {
+    padding: 10px 20px;
+    background-color: darkblue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color:orange;
+    transform: scale(1.05);
+}
+.upload
+{
+    padding: 20px;
+}
+.upload input
+{
+    padding: 10px 20px;
+    background-color: #a328a7;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.upload input:hover
+{
+    background-color: #6b0972;
+    transform: scale(1.05);
+}
+#labelimg{
+    /* border: 2px solid; */
+    width: 600px;
+}
